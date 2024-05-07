@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App 0</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]"
+    >
+      <div
+        class="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#C9EBFF,transparent)]"
+      ></div>
+    </div>
+    <section class="grid items-center justify-center min-h-[100vh]">
+      <div class="">
+        <h1 class="text-7xl font-bold mb-6">App 0</h1>
+        <p class="text-lg text-gray-500 mb-6">
+          We overengineered the hell out of this simple one page app. Well
+          because why not? 🤷‍♂️
+        </p>
+        <p class="text-gray-500">
+          Built by the
+          <a href="https://vizalo.co" class="underline text-gray-800">Vizalo</a>
+          team. Deployed and hosted using
+          <a href="https://vizalo.co/apps" class="underline text-gray-800"
+            >Vizalo apps</a
+          >
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

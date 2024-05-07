@@ -1,0 +1,34 @@
+{
+  "name": "app-0",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "preview": "npx --yes listhen --port 4000 ./src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eta": "^3.4.0",
+    "h3": "^1.11.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.8",
+    "typescript": "^5.4.5",
+    "unbuild": "^2.0.0"
+  }
+}
