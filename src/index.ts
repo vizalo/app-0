@@ -22,4 +22,11 @@ router.get(
     }),
 );
 
+router.get(
+    "/vizalo",
+    defineEventHandler((event) => {
+        "Hello Vizalo!"
+    }),
+);
+
 createServer(toNodeListener(app)).listen(4000);
