@@ -25,7 +25,7 @@ router.get(
 router.get(
     "/vizalo",
     defineEventHandler((event) => {
-        "Hello Vizalo!"
+        "Hello Vizalo! This is app-0"
     }),
 );
 
