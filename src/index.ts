@@ -13,7 +13,7 @@ const router = createRouter();
 const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
 const __dirname = path.dirname(__filename); // get the name of the directory
 
-const eta = new Eta({ views: join(__dirname, "templates") })
+const eta = new Eta({ views: join(__dirname, '../src', "templates") })
 
 app.use(router);
 
