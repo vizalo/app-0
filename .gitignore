@@ -1,2 +1,5 @@
 dist
 node_modules
+app-0.db
+app-0.db-shm
+app-0.db-wal
