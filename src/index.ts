@@ -28,6 +28,8 @@ router.get(
     defineEventHandler((event) => {
         const html = eta.render('home', {})
 
+        console.log("Hit the home route")
+
         return html;
     }),
 );
@@ -70,8 +72,10 @@ router.post("/oss", defineEventHandler(async (event) => {
 router.get(
     "/vizalo",
     defineEventHandler((event) => {
-        "Hello Vizalo! This is app-0!"
+        console.log("Hit the vizalo route")
+
+        return "Hello Vizalo! This is app-0!"
     }),
 );
 
-createServer(toNodeListener(app)).listen(4000);
+// createServer(toNodeListener(app)).listen(4000);
