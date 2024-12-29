@@ -5,12 +5,15 @@ import { Eta } from "eta"
 import path from 'path';
 import { fileURLToPath } from 'url';
 import Database from 'better-sqlite3';
-
-
+import { pino, Logger } from "pino";
 
 export const app = createApp();
 
 const router = createRouter();
+
+const logger: Logger = pino({
+    level: "info",
+});
 
 const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
 const __dirname = path.dirname(__filename); // get the name of the directory
@@ -27,6 +30,8 @@ router.get(
     "/",
     defineEventHandler((event) => {
         const html = eta.render('home', {})
+
+        logger.info("Hit the home route")
 
         return html;
     }),
@@ -70,8 +75,10 @@ router.post("/oss", defineEventHandler(async (event) => {
 router.get(
     "/vizalo",
     defineEventHandler((event) => {
+        logger.info("Hit the vizalo route")
+
         return "Hello Vizalo! This is app-0!"
     }),
 );
 
-// createServer(toNodeListener(app)).listen(4000);
+createServer(toNodeListener(app)).listen(4000);

@@ -26,7 +26,8 @@
     "@types/better-sqlite3": "^7.6.11",
     "better-sqlite3": "^11.1.2",
     "eta": "^3.4.0",
-    "h3": "^1.11.1"
+    "h3": "^1.11.1",
+    "pino": "^9.6.0"
   },
   "devDependencies": {
     "@types/node": "^20.12.8",
